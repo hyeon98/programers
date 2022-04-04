@@ -42,7 +42,7 @@ def solution(board, moves):
     # print(pickUpItem)
     # print(countScore)
 
-    answer = countScore*2
+    answer = countScore
     return answer
 
 print(solution(inputBoard, inputMoves))

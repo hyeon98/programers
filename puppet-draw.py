@@ -25,11 +25,12 @@ def solution(board, moves):
                     if prevPickUpItem == indexPickUpItem:
                         # print('pickUpItem', pickUpItem)
                         # print('countItem', countItem)
-                        countScore += 1
                         # print('pickUpItem', pickUpItem[countItem])
                         del pickUpItem[countItem]
+                        countScore += 1
                         # print('pickUpItem-1', pickUpItem[countItem-1])
                         del pickUpItem[countItem-1]
+                        countScore += 1
                     else:
                         prevPickUpItem = indexPickUpItem
                     

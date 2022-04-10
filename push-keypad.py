@@ -27,9 +27,8 @@ def solution(numbers, hand):
     arrayKeyPad = [ [ 1, 2, 3], [ 4, 5, 6], [ 7, 8, 9], [ '*', 0, '#'] ] # 키패드 배열
 
     for indexNumber in numbers:
+        # 아래 함수는 키패드 배열에서 원하는 인덱스를 찾아주는 함수 ex)키패드 2번일때, [0, 1] 출력 / 키패드 9번일때, [2, 2] 출력
         findIndex = index_2d(arrayKeyPad, indexNumber)
-        # 위 함수는 키패드 배열에서 원하는 인덱스를 찾아주는 함수 ex)키패드 2번일때, [0, 1] 출력 / 키패드 9번일때, [2, 2] 출력
-        print(findIndex)
 
         if findIndex[1] == 0: # 찾은 인덱스가 왼쪽 배열이라면 출력에 L 추가
             arrayPosition.append('L')

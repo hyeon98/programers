@@ -21,8 +21,8 @@ def index_2d(data, search):
 
 def solution(numbers, hand):
 
-    prevPositionHandR = [3, 0] # 초기 오른손 포지션
-    prevPositionHandL = [3, 2] # 초기 왼손 포지션
+    prevPositionHandR = [3, 2] # 초기 오른손 포지션
+    prevPositionHandL = [3, 0] # 초기 왼손 포지션
     arrayPosition = [] # 출력될 배열
     arrayKeyPad = [ [ 1, 2, 3], [ 4, 5, 6], [ 7, 8, 9], [ '*', 0, '#'] ] # 키패드 배열
 

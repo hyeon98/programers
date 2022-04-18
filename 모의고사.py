@@ -16,13 +16,13 @@ def solution(answers):
     
     # 정답 비교하고 맞은 갯수 카운트
     for idx in range(len(answers)):
-        if answers[idx] == supoza1[idx] :
+        if answers[idx] == supoza1[idx%5] :
             supoza_answers_cnt[first]+=1
             
-        if answers[idx] == supoza2[idx] :
+        if answers[idx] == supoza2[idx%8] :
             supoza_answers_cnt[second]+=1
             
-        if answers[idx] == supoza3[idx] :
+        if answers[idx] == supoza3[idx%10] :
             supoza_answers_cnt[third]+=1
         
     # 가장 많이 맞은 갯수를 찾는다.
